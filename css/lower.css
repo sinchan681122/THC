@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*下層ページ用*/
+.header {
+	padding-bottom: 10px;
+  background: url(../img/background.jpg) center top no-repeat;
+}
+
+.content__inner {
+	padding: 20px;
+}
+
+/*見出し*/
+
+.header--sub {
+	padding: 43px 21px 31px;
+}
+
+.entry__ttl {
+	font-size: 22px;
+	letter-spacing: 0.13em;
+	line-height: 1.4;
+}
+
+.entry__ttl--en {
+	font-size: 9px;
+	color: #39c;
+	letter-spacing: 0.15em;
+	margin-top: 1px;
+}
+
+/*パンクズリスト*/
+
+.breadcrumb {
+	background-color: #d1edfb;
+	padding: 0 23px;
+	margin-bottom: 23px;
+	color: #666;
+}
+
+.breadcrumb__list,
+.breadcrumb__list a {
+	float: left;
+	margin-right: 4px;
+	line-height: 2;
+	font-size: 11px;
+}
+
+.breadcrumb__list:after {
+	content: " > ";
+}
+
+.breadcrumb__list--current:after {
+	content: "";
+}
+
+/*本文*/
+
+.entry__ttl--sub {
+	margin-bottom: 13px;
+}
+
+.entry__ttl--sub span {
+	background: url(../img/dot.gif) repeat-x left bottom;
+	padding-bottom: 9px;
+	padding-left: 3px;
+	font-size: 16px;
+}
+
+.entry__wrapper {
+	padding: 11px 0 30px;
+}
+
+.entry__txt2 {
+	line-height: 1.8em;
+	margin-bottom: 1.75em; 
+}
+
+.entry__txt2 {
+	line-height: 1.8em;
+	margin-bottom: 1.75em;
+	padding-top:10px;
+	padding-bottom:0px;
+}
+
+.entry__img {
+}
+
+.entry__img--right {
+	float: right;
+	margin-left: 21px;
+	margin-top: 4px;
+}
+
+.entry__img--left {
+	float: left;
+	margin-right: 21px;
+	margin-top: 4px;
+}
+
+.entry__img--full {
+	display:block;
+	margin: 37px 0 17px;
+	clear: both;
+}
+
+.entry__dl dt {
+	margin-bottom: 1.5em;
+	padding: 1px 0 6px;
+}
+
+.entry__dl dd {
+	line-height: 1.65em;
+}
+
+.entry__btn--large {
+	display: block;
+	padding: 29px 20px 30px;
+	margin-bottom: 10px;
+	background-color: #39c;
+	color: #FFF;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.entry__btn--large:before {
+	content: url(../img/ico-arrow.gif);
+	padding-right: 8px;
+	position: relative;
+	top: -2px;
+}
+
+.entry__btn--low {
+	display: block;
+	padding: 10px 10px 10px;
+	margin-bottom: 10px;
+	margin-top:10px;
+	background-color: #39c;
+	color: #FFF;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.entry__btn--low:before {
+	content: url(../img/ico-arrow.gif);
+	padding-right: 8px;
+	position: relative;
+	top: -2px;
+}
+
+.googlemap {
+	margin-top: -8px;
+}
+
+.comt {
+   
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: left;
+	margin-bottom:30px;
+}
+.comt th {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    background-color: #f0f0f0;
+    font-weight: normal;
+}
+.comt td {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}

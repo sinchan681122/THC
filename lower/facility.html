@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>東京ヘリコプタークラブ - 東京ヘリコプタークラブについて</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/lower.css">
+
+<!--&#91;if lt IE 9&#93;>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<!&#91;endif&#93;-->
+
+<!-- jQuery.jsの読み込み -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body class="all__outer">
+<div class="all">
+  <div class="all__inner clearfix" id="top">
+    <div class="header">
+      <header>
+        <h1 class="logo"><a href="../index.html"><img src="../img/logo.jpg" class="logo__img" alt="東京ヘリコプタークラブ"></a></h1>
+        <div class="header__copy">東京から一番近いヘリコプタークラブ<br>
+        ～大空の夢を諦めない人のためのクラブ～</div>
+      </header>
+    </div>
+    <div class="gnav">
+      <nav>
+        <ul class="gnav--main">
+          <li class="gnav__menu"><a href="./about.html" class="menu-001"><img alt="東京ヘリコプタークラブについて" src="../img/menu-001.gif" /></a></li>
+          <li class="gnav__menu"><a href="./service.html" class="menu-002"><img alt="サービス概要" src="../img/menu-002.gif" /></a></li>
+          <li class="gnav__menu"><a href="./price.html" class="menu-003"><img alt="料金について" src="../img/menu-003.gif" /></a></li>
+          <li class="gnav__menu gnav__menu--current"><a class="menu-004"><img alt="施設概要" src="../img/menu-004.gif" /></a></li>
+          <li class="gnav__menu"><a href="./contact.php" class="menu-005"><img alt="資料請求・お問い合わせ" src="../img/menu-005.gif" /></a></li>
+        </ul>
+        <ul class="gnav--sub">
+          <li class="gnav__menu"><a href="voice.html" class="menu-101"><img alt="推薦者／体験者の声" src="../img/menu-101.jpg" /></a></li>
+          <li class="gnav__menu"><a href="faq.html" class="menu-102"><img alt="Q&amp;A" src="../img/menu-102.jpg" /></a></li>
+          <li class="gnav__menu"><a href="https://www.facebook.com/%E6%9D%B1%E4%BA%AC%E3%83%98%E3%83%AA%E3%82%B3%E3%83%97%E3%82%BF%E3%83%BC%E3%82%AF%E3%83%A9%E3%83%96-675546629251613/?ref=hl" class="menu-103" target="_blank"><img alt="BLOG" src="../img/menu-103.jpg" /></a></li>
+          <li class="gnav__menu"><a href="http://weather.yahoo.co.jp/weather/jp/12/4510/12217/2770822.html" class="menu-104" target="_blank"><img alt="気象情報" src="../img/menu-104.jpg" /></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="header--sub">
+        <h1 class="entry__ttl">施設概要</h1>
+        <div class="entry__ttl--en">Facility</div>
+      </div>
+      <div class="breadcrumb clearfix">
+        <nav>
+          <ul>
+            <li class="breadcrumb__list"><a href="../index.html">HOME</a></li>
+            <li class="breadcrumb__list breadcrumb__list--current">施設概要</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content__inner">
+        <div class="entry">
+          <article>
+            <h1 class="entry__ttl--sub"><span>施設概要</span></h1>
+            <div class="entry__wrapper">
+              <p class="entry__txt clearfix">
+              東京ヘリコプタークラブの活動拠点である布施ヘリポートの施設をご紹介いたします。
+              </p>
+			<p><img class="entry__img--full" src="../img/service/price.png" alt=""></p>
+
+
+
+          </article>
+        </div>
+        
+      </div>
+    </div>
+    <div class="pagetop"><a href="#top"><img class="pagetop__btn" alt="" src="../img/pagetop.gif" /></a></div>
+  </div>
+  <div class="footer">
+    <footer>
+      <p class="footer__copy">Copyright &copy;Tokyo Helicopter Club. All Rights Reserved.</p>
+      <p class="footer__txt">東京ヘリコプタークラブ / 株式会社布施ヘリポート<br>
+        〒277-0822 千葉県柏市布施下121番地<br>
+        TEL：04-7199-2035 FAX:04-7199-2036</p>
+    </footer>
+  </div>
+</div>
+<script>
+
+// スムーススクロール
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+</body>
+</html>
